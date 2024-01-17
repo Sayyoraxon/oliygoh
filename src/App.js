@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
+import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import './App.css';
+import SignUp from './components/SignUp';
+import Home from './components/Home';
+import Main from './components/Main';
+import { useState } from 'react';
+import Rules from './components/Rules';
 
 function App() {
+
+  const [login, setLogin] = useState(false)
+
+  const routes = createBrowserRouter(
+    createRoutesFromElements(
+      <Route element={<Home />}>
+        <Route index element={<Main login={login}/>} />
+        <Route path="signUp" element={<SignUp setLogin={setLogin}/>} />
+        <Route path="rules" element = {<Rules/>}/>
+      </Route>
+    )
+  )
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={routes} />
     </div>
   );
 }

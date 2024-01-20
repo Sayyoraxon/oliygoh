@@ -428,4 +428,8 @@ input.check {
     right: 32px;
     left: auto;
   }
+
+  .input_div input, .inputdiv input {
+    width: 283px;
+  }
 }

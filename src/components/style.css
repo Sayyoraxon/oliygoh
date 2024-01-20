@@ -1,224 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body { 
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a { 
+  color: #8024ff;
+}
+
+.signup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.sign_div, .fon {
+  width: 50%
+}
+
+.icon_div {
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.icon_div img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.icon_div h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
 .registration {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-    position: relative;
+  margin-bottom: 20px;
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #EAEEF1;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title {
+  margin: 0 0 15px 0;
+  width: 286px;
+  color: #1d1d1d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 .input_div {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 36px;
-    border: 1px solid #dbdbdb;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 340px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid#EAEEF1;
+  background: #FFF;
 }
 
 .inputdiv {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 36px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 36px;
 }
 
 .input_div img {
-    width: 20px;
-    height: auto;
-    margin: 0 5px;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+img.hide {
+  width: 20px;
+  height: 20px;
+  padding: 12px;
 }
 
 .input_div input {
-    height: 34px !important;
-    width: 240px !important;
-    border: none !important;
+  height: 42px;
+  width: 252px;
+  border: none;
+  color: #1d1d1d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 20px;
+  border-left: 1px solid #EAEEF1;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 input.check {
-    margin: 0 5px;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
+  margin: 0;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  accent-color: #8024ff;
 }
+
+.useRules {
+  color: #1d1d1d;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.useRules a {
+  color: #8024ff;
+}
+
 
 .registerbtn {
-    width: 100%;
-    padding: 8px;
-    color: #000;
-    border: 1px solid #dbdbdb;
-    cursor: pointer;
+  width: 100%;
+  padding: 12.5px;
+  font-size: 16px;
+  font-family: Roboto;
+  letter-spacing: 0.48px;
+  color: #8e9399;
+  border: 1px solid #EAEEF1;
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
 }
 
-.div1, .div2, .div3, .div4 {
-    position: absolute;    
-    padding: 5px;
-    font-size: 12px;
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-    color: #f00a29;
+.div1,
+.div2,
+.div3,
+.div4 {
+  position: absolute;
+  padding: 11.5px 20px;
+  font-size: 14px;
+  border: 1px solid #eaeef1;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #ef1717;
+}
+
+.shape {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-right: 1px solid #eaeef1;
+  border-bottom: 1px solid #eaeef1;
+  rotate: 45deg;
+  top: 36px;
+  left: 28px;
 }
 
 
 .div1 {
-    top: 230px;
-    right: 0;
+  top: 239px;
+  left: 314px;
+  width: 267px;
 }
 
 .div2 {
-    top: 280px; 
-    right: 0;
+  top: 300px;
+  left: 314px;
+  width: 200px;
 }
 
 .div3 {
-    top: 180px;
-    right: 0;
+  top: 178px;
+  left: 314px;
+  width: 160px;
 }
 
 .div4 {
-    top: 120px;
-    right: 0;
+  top: 105px;
+  left: 314px;
+  width: 124px;
 }
 
-.circular{
-    height: 50px;
-    width: 50px;
-    position: relative;
-  }
-  .circular .inner, .circular .outer, .circular .circle{
-    position: absolute;
-    z-index: 6;
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
-  }
-  .circular .inner{
-    top: 50%;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    margin: -20px 0 0 -20px;
-    background-color: #dde6f0;
-    border-radius: 100%;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-  }
-  .circular .circle{
-    z-index: 1;
-    box-shadow: none;
-  }
-  .circular .numb{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 500;
-    color: #a841d0;
-  }
-  .circular .bar{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    -webkit-border-radius: 100%;
-    clip: rect(0px, 50px, 50px, 25px);
-  }
-  .circle .bar .progress{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    -webkit-border-radius: 100%;
-    clip: rect(0px, 25px, 50px, 0px);
-  }
-  .circle .bar .progress, .dot span{
-    background: #a841d0;
-  }
-  .circle .left .progress{
-    z-index: 1;
-    animation: left 30s linear both;
-  }
-  @keyframes left {
-    100%{
-      transform: rotate(180deg);
-    }
-  }
-  .circle .right{
-    z-index: 3;
+.circular {
+  height: 42px;
+  width: 42px;
+  position: relative;
+}
+
+.circular .inner,
+.circular .outer,
+.circular .circle {
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.circular .inner {
+  top: 50%;
+  left: 50%;
+  height: 38px;
+  width: 38px;
+  margin: -19px 0 0 -19px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.circular .circle {
+  z-index: 1;
+  box-shadow: none;
+}
+
+.circular .numb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 16px;
+  font-weight: 500;
+  color: #8024ff;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 42px, 42px, 21px);
+}
+
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 21px, 42px, 0px);
+}
+
+.circle .bar .progress,
+.dot span {
+  background: #8024ff;
+}
+
+.circle .left .progress {
+  z-index: 1;
+  animation: left 30s linear both;
+}
+
+@keyframes left {
+  100% {
     transform: rotate(180deg);
   }
-  .circle .right .progress{
-    animation: right 30s linear both;
-    animation-delay: 30s;
+}
+
+.circle .right {
+  z-index: 3;
+  transform: rotate(180deg);
+}
+
+.circle .right .progress {
+  animation: right 30s linear both;
+  animation-delay: 30s;
+}
+
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
   }
-  @keyframes right {
-    100%{
-      transform: rotate(180deg);
-    }
+}
+
+.circle .dot {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 8px;
+  margin-top: -4px;
+  animation: dot 60s linear both;
+  transform-origin: 0% 50%;
+}
+
+.circle .dot span {
+  position: absolute;
+  right: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+}
+
+@keyframes dot {
+  0% {
+    transform: rotate(-90deg);
   }
-  .circle .dot{
-    z-index: 2;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    height: 10px;
-    margin-top: -5px;
-    animation: dot 60s linear both;
-    transform-origin: 0% 50%;
+
+  50% {
+    transform: rotate(90deg);
+    z-index: 4;
   }
-  .circle .dot span {
-    position: absolute;
-    right: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
+
+  100% {
+    transform: rotate(270deg);
+    z-index: 4;
   }
-  @keyframes dot{
-    0% {
-      transform: rotate(-90deg);
-    }
-    50% {
-      transform: rotate(90deg);
-      z-index: 4;
-    }
-    100% {
-      transform: rotate(270deg);
-      z-index: 4;
-    }
+}
+
+.timer_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sendingSMS,
+.sendingSMS_ {
+  margin: 0;
+  color: #8e9399;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.sendingSMS_ {
+  margin-bottom: 30px;
+}
+
+.repeatcode {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
+  margin: 15px 0 30px 0;
+  text-decoration: underline;
+  color: #8024ff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+  .registration {
+    width: 363px;
+  }
+
+  .title {
+    width: 260px;
   }
 
   .timer_div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 20px;
   }
 
-  .sendingSMS, .sendingSMS_ {
-    margin: 0;
-    color: #999292;
-    font-size: 14px;
+  .input_div, .inputdiv {
+    width: 303px;
   }
 
-  .sendingSMS_ {
-    margin-bottom: 20px;
+  .input_div input {
+    width: 215px;
   }
 
-.repeatcode {
-    border: none;
-    background-color: #fff;
-    width: 100%;
-    text-align: left;
-    margin: 10px 0 20px 0;
-    text-decoration: underline;
-    color: #a841d0;
-    font-size: 14px;
-    cursor: pointer;
+  .div1, .div2, .div3, .div4 {
+    left: 277px;
+  }
+  
+}
+
+@media screen and (max-width: 730px) {
+
+  .sign_div { 
+    width: 100%
+  }
+  
+  .fon {
+    display: none;
+    width: 0;
+  }
+
+  .fon img {
+    display: none;
+  }
+
+  .div1, .div2, .div3, .div4 {
+    right: 10px;
+    left: auto;
+  }
+
+  .shape {
+    right: 32px;
+    left: auto;
+  }
 }

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import unlock from '../images/158599.png'
-import warning from "../images/warning.webp"
+import unlock from '../images/Unlock 1.svg'
+import warning from "../images/Error circle 3.png"
 import "./style.css"
 import { useNavigate } from 'react-router-dom'
 
@@ -42,7 +42,7 @@ const SendCode = ({phoneNumber, setLogin}) => {
     return (
         <>
             <div className='timer_div'>
-                <h3>Raqamni tasdiqlash</h3>
+                <h2 className='title'>Raqamni tasdiqlash</h2>
                 <div className="circular"
             style={{display: seconds <= 0 ? "none" : ""}}>
                 <div className="inner"></div>
@@ -66,7 +66,7 @@ const SendCode = ({phoneNumber, setLogin}) => {
             </div>
             
             <p className='sendingSMS'>SMS quyidagi raqamga yuborilgan:</p>
-            <p className='sendingSMS_'>{`+${phoneNumber}`}</p>
+            <p className='sendingSMS_'>{phoneNumber}</p>
             <div className="input_div">
                 <img src={unlock} alt="unlock" />
                 <input placeholder="Tasdiqlash kodi"
@@ -87,6 +87,7 @@ const SendCode = ({phoneNumber, setLogin}) => {
 
             {!enter && <div className='div4'>
                 Kod xato kiritilgan
+                <div className='shape'></div>
             </div>}
 
             

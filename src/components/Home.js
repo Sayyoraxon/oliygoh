@@ -9,9 +9,6 @@ const Home = () => {
                 <Outlet/>
 
             </div>
-            <div className="fon">
-
-            </div>
         </>
     )
 }

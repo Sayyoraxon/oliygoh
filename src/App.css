@@ -1,18 +1,6 @@
-.App {
-  display: flex;
-}
 
-.App > div {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #efefef;
-  height: 100vh;
-}
 
-.fon {
-  background-color: #83c5c7;
-}
+
+
+
 

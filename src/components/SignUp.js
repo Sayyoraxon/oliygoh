@@ -161,7 +161,7 @@ const SignUp = ({ setLogin }) => {
                 </div>
 
             </div>
-            {!newWin && <p style={{margin: 0}}>Akkountingiz bormi?
+            {!newWin && <p className="account">Akkountingiz bormi?
                 <NavLink to="/"> Kirish</NavLink>
             </p>}
         </div>

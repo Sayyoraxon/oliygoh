@@ -216,6 +216,11 @@ input.check {
   width: 124px;
 }
 
+.account {
+  margin: 0;
+  font-size: 16px;
+}
+
 .circular {
   height: 42px;
   width: 42px;
@@ -425,6 +430,11 @@ input.check {
     padding: 20px
   }
 
+  .title { 
+    font-size: 18px;
+    width: auto;
+  }
+
   .input_div, .inputdiv { 
     width: 280px
   }
@@ -443,15 +453,19 @@ input.check {
   }
 
   .div1{
-    top: 229px;
+    top: 219px;
   }
 
   .div2{
-    top: 290px;
+    top: 280px;
   }
 
   .div3{
-    top: 168px;
+    top: 158px;
+  }
+
+  .div4 { 
+    top: 89px
   }
 
   .div1, .div2, .div3, .div4 {
@@ -462,6 +476,10 @@ input.check {
   .shape {
     right: 22px;
     left: auto;
+  }
+
+  .account, .sendingSMS, .repeatcode, .sendingSMS_ {
+    font-size: 14px;
   }
 
 

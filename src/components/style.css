@@ -395,8 +395,13 @@ input.check {
   }
 
   .input_div input {
-    width: 215px;
+    width: 246px;
   }
+
+  .inputdiv input {
+    width: 24px
+  }
+
 
   .div1, .div2, .div3, .div4 {
     left: 277px;
@@ -429,7 +434,5 @@ input.check {
     left: auto;
   }
 
-  .input_div input, .inputdiv input {
-    width: 283px;
-  }
+
 }

@@ -399,7 +399,12 @@ input.check {
   }
 
   .inputdiv input {
-    width: 24px
+    width: 24px;
+    height: 24px;
+  }
+
+  .useRules{ 
+    font-size: 14px;
   }
 
 
@@ -414,6 +419,19 @@ input.check {
   .sign_div { 
     width: 100%
   }
+
+  .registration { 
+    width: 320px;
+    padding: 20px
+  }
+
+  .input_div, .inputdiv { 
+    width: 280px
+  }
+
+  .input_div input {
+    width: 170px;
+  }
   
   .fon {
     display: none;
@@ -424,13 +442,25 @@ input.check {
     display: none;
   }
 
+  .div1{
+    top: 229px;
+  }
+
+  .div2{
+    top: 290px;
+  }
+
+  .div3{
+    top: 168px;
+  }
+
   .div1, .div2, .div3, .div4 {
     right: 10px;
     left: auto;
   }
 
   .shape {
-    right: 32px;
+    right: 22px;
     left: auto;
   }
 
